@@ -47,6 +47,10 @@ export enum ThemeSettingDefaults {
 	COLOR_THEME_DARK_OLD = 'Default Dark+',
 	COLOR_THEME_LIGHT_OLD = 'Default Light+',
 
+	// VS Qoude custom themes
+	COLOR_THEME_QOUDE_DARK = 'VS Qoude Dark',
+	COLOR_THEME_QOUDE_LIGHT = 'VS Qoude Light',
+
 	FILE_ICON_THEME = 'vs-seti',
 	PRODUCT_ICON_THEME = 'Default',
 }

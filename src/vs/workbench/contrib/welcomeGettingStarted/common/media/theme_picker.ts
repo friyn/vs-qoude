@@ -10,6 +10,16 @@ import { ThemeSettingDefaults } from '../../../../services/themes/common/workben
 export default () => `
 <checklist>
 	<div class="theme-picker-row">
+		<checkbox when-checked="setTheme:${ThemeSettingDefaults.COLOR_THEME_QOUDE_DARK}" checked-on="config.workbench.colorTheme == '${ThemeSettingDefaults.COLOR_THEME_QOUDE_DARK}'">
+			<img width="200" src="./dark.png"/>
+			${escape(localize('qoudeDark', "VS Qoude Dark"))}
+		</checkbox>
+		<checkbox when-checked="setTheme:${ThemeSettingDefaults.COLOR_THEME_QOUDE_LIGHT}" checked-on="config.workbench.colorTheme == '${ThemeSettingDefaults.COLOR_THEME_QOUDE_LIGHT}'">
+			<img width="200" src="./light.png"/>
+			${escape(localize('qoudeLight', "VS Qoude Light"))}
+		</checkbox>
+	</div>
+	<div class="theme-picker-row">
 		<checkbox when-checked="setTheme:${ThemeSettingDefaults.COLOR_THEME_DARK}" checked-on="config.workbench.colorTheme == '${ThemeSettingDefaults.COLOR_THEME_DARK}'">
 			<img width="200" src="./dark.png"/>
 			${escape(localize('dark', "Dark Modern"))}
