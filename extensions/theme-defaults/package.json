@@ -14,6 +14,18 @@
   "contributes": {
     "themes": [
       {
+        "id": "VS Qoude Light",
+        "label": "VS Qoude Light",
+        "uiTheme": "vs",
+        "path": "./themes/qoude_light.json"
+      },
+      {
+        "id": "VS Qoude Dark",
+        "label": "VS Qoude Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/qoude_dark.json"
+      },
+      {
         "id": "Default Dark+",
         "label": "%darkPlusColorThemeLabel%",
         "uiTheme": "vs-dark",
@@ -68,10 +80,13 @@
         "label": "%minimalIconThemeLabel%",
         "path": "./fileicons/vs_minimal-icon-theme.json"
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "workbench.colorTheme": "VS Qoude Light"
+    }
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/microsoft/vscode.git"
+    "url": "https://github.com/friyn/vs-qoude.git"
   }
 }
